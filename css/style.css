@@ -1,0 +1,138 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/* General */
+nav ul a,
+nav .left,
+nav .brand-logo {
+  color: #333;
+}
+
+p {
+  line-height: 2rem;
+  font-size:22px;
+}
+
+/* Nav Section */
+.nav-menu img {
+  width: 42px;
+  height: 42px;
+  margin-right: 8px;
+}
+
+.nav-menu p, .nav-menu a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#home, #about_me, #projects, #contact {
+  transition: transform 0.5s ease;
+}
+
+#home:hover, 
+#about_me:hover, 
+#projects:hover, 
+#contact:hover  {
+  color: #00FFC2 !important;
+}
+
+.hover-green:hover  {
+  color: #00FFC2 !important;
+  font-weight: 450;
+}
+
+#home:hover, 
+#about_me:hover, 
+#projects:hover, 
+#contact:hover  {
+  transform: scale(1.1);
+}
+
+/* Home Section */
+#home_section h2,
+#about_me_section h3,
+#projects_section h3, 
+#contact_section h3 {
+  font-weight: 1000;
+}
+
+#home_section {
+  color: white;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+#home_section p {
+  padding-top: 2rem;
+}
+
+.banner-intro div {
+  margin-top: 5rem;
+}
+
+.social-media {
+  margin-top: 100%;
+  width: 60px;
+  height: 100%;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  vertical-align: middle;
+}
+
+.social-media div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-icons img, .social-media div {
+  transition: transform 0.3s ease;
+}
+
+.social-media-icons img:hover, .social-media div:hover {
+  transform: scale(1.2);
+}
+
+/* About Me */
+.get-to-know p {
+  padding-top: 1rem;
+}
+
+.get-to-know h5, 
+.my-skills h5 {
+  font-weight: 500;
+}
+
+.my-skills a {
+  margin-top: .5rem;
+}
+
+.my-skills a:hover {
+  margin-top: .5rem;
+  cursor: default;
+}
+
+/* Projectss */
+/* Contact */
+#projects_section p {
+  font-size:18px;
+}
+
+#projects_section .row {
+  margin-top: 2rem;
+}
+
+/* Footer */
+.page-footer p {
+  font-size:15px;
+}
