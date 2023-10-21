@@ -5,6 +5,32 @@
  *
  * Made By MaterializeCSS.com
  */
+ @media only screen and (min-width: 992px) {
+  .banner-intro {
+      margin-top: 7rem;
+  }
+  #home_section {
+      height: 95vh;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  #nav-profile  {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90% !important;
+  }
+}
+
+.nav-mobile-fixed {
+  position: relative;
+  height: 56px;
+  z-index: 998;
+}
+
+.nav-mobile-fixed nav {
+  position: fixed;
+}
 
 /* General */
 nav ul a,
@@ -30,13 +56,14 @@ p {
   font-weight: 600;
 }
 
-#home, #about_me, #projects, #contact {
+#home, #about_me, #projects, #certifications, #contact {
   transition: transform 0.5s ease;
 }
 
 #home:hover, 
 #about_me:hover, 
-#projects:hover, 
+#projects:hover,
+#certifications:hover,
 #contact:hover  {
   color: #00FFC2 !important;
 }
@@ -48,7 +75,8 @@ p {
 
 #home:hover, 
 #about_me:hover, 
-#projects:hover, 
+#projects:hover,
+#certifications:hover, 
 #contact:hover  {
   transform: scale(1.1);
 }
@@ -56,7 +84,8 @@ p {
 /* Home Section */
 #home_section h2,
 #about_me_section h3,
-#projects_section h3, 
+#projects_section h3,
+#certifications_section h3,
 #contact_section h3 {
   font-weight: 1000;
 }
@@ -123,13 +152,15 @@ p {
 }
 
 /* Projectss */
+/* Certifications */
 /* Contact */
-#projects_section p {
-  font-size:18px;
+#projects_section .row,
+#certifications_section .row {
+  margin-top: 2.5rem;
 }
 
-#projects_section .row {
-  margin-top: 2rem;
+#projects_section .carousel-slider {
+  margin-top: 1.5rem;
 }
 
 /* Footer */

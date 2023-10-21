@@ -10,21 +10,11 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <style>
-        @media only screen and (min-width: 992px) {
-            .banner-intro {
-                margin-top: 7rem;
-            }
-            #home_section {
-                height: 95vh;
-            }
-        }
-    </style>
 </head>
 <body>
 <div class="navbar-fixed hide-on-med-and-down nav-menu">
     <nav class="grey darken-4">
-        <div class="nav-wrapper container">
+        <div class="nav-wrapper container" id="nav-profile">
             <div class="left">
                 <div class="valign-wrapper">
                     <img src="assets/profile-logo.jpg" class="circle responsive-img" alt="My Profile Picture">
@@ -35,28 +25,33 @@
                 <li><a href="#home_section" id="home" class="white-text">HOME</a></li>
                 <li><a href="#about_me_section" id="about_me" class="white-text">ABOUT ME</a></li>
                 <li><a href="#projects_section" id="projects" class="white-text">PROJECTS</a></li>
+                <li><a href="#certifications_section" id="certifications" class="white-text">CERTIFICATIONS</a></li>
                 <li><a href="#contact_section" id="contact" class="white-text">CONTACT</a></li>
             </ul>
         </div>
     </nav>
 </div>
-<nav class="grey darken-4 hide-on-large-only">
-    <ul class="sidenav" id="nav-mobile">
-        <li>
-            <div class="user-view">
-                <div class="background">
-                    <img src="assets/profile-background.jpeg" class="responsive-img">
+<nav class="nav-mobile-fixed grey darken-4 hide-on-large-only">
+    <nav class="grey darken-4">
+        <ul class="sidenav" id="nav-mobile">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="assets/profile-background.jpeg" class="responsive-img">
+                    </div>
+                    <a href="#"><img class="circle" src="assets/profile-logo.jpg"></a>
+                    <a href="#"><span class="black-text name">Marco Antonio Tarala</span></a>
                 </div>
-                <a href="#"><img class="circle" src="assets/profile-logo.jpg"></a>
-                <a href="#"><span class="black-text name">Marco Antonio Tarala</span></a>
-            </div>
-        </li>
-        <li><a href="#home_section">HOME</a></li>
-        <li><a href="#about_me_section">ABOUT ME</a></li>
-        <li><a href="#projects_section">PROJECTS</a></li>
-        <li><a href="#contact_section">CONTACT</a></li>
-    </ul>
-    <a href="#" data-target="nav-mobile" class="sidenav-trigger show-on-small"><i class="material-icons">menu</i></a>
+            </li>
+            <li><a href="#home_section">HOME</a></li>
+            <li><a href="#about_me_section">ABOUT ME</a></li>
+            <li><a href="#projects_section">PROJECTS</a></li>
+            <li><a href="#certifications_section">CERTIFICATIONS</a></li>
+            <li><a href="#contact_section">CONTACT</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </nav>
+    
 </nav>
 
 <div class="parallax-container">
@@ -99,12 +94,12 @@
                 </div>
             </div>
             <div class="col s12 m6 l6 get-to-know">
-                <h5 class="header light">Get acquainted with me!</h5>
+                <h5 class="header">Get acquainted with me!</h5>
                 <p class="light">I am a Backend Services Specialist with a focus on Java programming technologies. I specialize in crafting innovative projects using Java, showcasing proficiency in database management and various Java-related technologies. I hold a certification in AKS AZ-900, reflecting my commitment to staying abreast of the latest technological advancements.</p>
                 <p class="light">Rooted in backend development, I'm venturing into frontend technologies, studying Angular, JavaScript, and TypeScript. Eager to apply my backend expertise for cohesive end-to-end solutions. Explore my noteworthy backend projects in the Projects section, and connect on LinkedIn for web development insights and updates!</p>
             </div>
             <div class="col s12 m6 l6 my-skills">
-                <h5 class="header light ">My Skills</h5>
+                <h5 class="header">My Skills</h5>
                 <a class="grey lighten-2 btn-flat">Spring Framework</a>
                 <a class="grey lighten-2 btn-flat">RESTful Architecture</a>
                 <a class="grey lighten-2 btn-flat">Spring Boot</a>
@@ -143,7 +138,7 @@
                     <a class="carousel-item" href="#four!"><img src="assets/projects/peso-text/peso-text-3.png" alt=""></a>
                 </div>
             </div>
-            <div class="col s12 m6 l5 offset-l1">
+            <div class="col s12 m6 l6">
                 <div class="col s12">
                     <h5 class="header">Peso Text Vending Machine</h5>
                 </div>
@@ -168,7 +163,7 @@
                     <a class="carousel-item" href="#seven!"><img src="assets/projects/mgt-system/mgt-system-7.png" alt=""></a>
                 </div>
             </div>
-            <div class="col s12 m6 l5 offset-l1">
+            <div class="col s12 m6 l6">
                 <div class="col s12">
                     <h5 class="header">Sandelled Skilled & Multi-Services Corporation</h5>
                 </div>
@@ -191,7 +186,7 @@
                     <a class="carousel-item" href="#five!"><img src="assets/projects/join-pru/join-pru-5.png" alt=""></a>
                 </div>
             </div>
-            <div class="col s12 m6 l5 offset-l1">
+            <div class="col s12 m6 l6">
                 <div class="col s12">
                     <h5 class="header">Join Pru</h5>
                 </div>
@@ -200,6 +195,37 @@
                 </div>
                 <div class="col s12">
                     <a href="#" class="btn-small waves-effect waves-light grey darken-3 hover-green">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section grey lighten-5 scrollspy" id="certifications_section">
+    <div class="container">
+        <div class="container">
+            <div class="col s12">
+                <h3 class="header center s12 light">CERTIFICATIONS</h3>
+                <div class="center">
+                    <p class="light">Dive into my Certifications Showcase, a curated collection highlighting my commitment to expertise and continual learning.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <img src="assets/certifications/az-900.png" class="responsive-img" alt="azure az-900 certification">
+                </div>
+                <div class="col s12 m6 l8">
+                    <div class="col s12">
+                        <h5 class="header">Microsoft Certified: Azure Fundamentals</h5>
+                    </div>
+                    <div class="col s12">
+                        <p class="light">Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.</p>
+                    </div>
+                    <div class="col s12">
+                        <a href="https://www.credly.com/badges/dc502221-f268-41da-88c1-9657012135bf" target="_blank" class="btn-small waves-effect waves-light grey darken-3 hover-green">Show Credential</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -274,18 +300,18 @@
 <script src="js/init.js"></script>
 <script>
 
+    $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+    });
+
+    $(document).ready(function(){
+        $('.parallax').parallax();
+    });
+
     document.addEventListener('DOMContentLoaded', function() {
         $('.carousel.carousel-slider').carousel({
             fullWidth: true,
             indicators: true
-        });
-
-        $(document).ready(function(){
-            $('.scrollspy').scrollSpy();
-        });
-
-        $(document).ready(function(){
-            $('.parallax').parallax();
         });
     });
 </script>
